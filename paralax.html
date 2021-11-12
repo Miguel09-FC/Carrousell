@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" href="estilos.css"><!-->
+    <title>Document</title>
+    <style>
+        body, html {
+          height: 100%;
+        }
+        
+        .parallax {
+          /* The image used */
+          background-image: url('img/parallax.jpg');
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+        @media only screen and (max-device-width: 1366px) {
+          .parallax {
+            background-attachment: scroll;
+          }
+        }
+        </style>
+        </head>
+        <body>
+            <a href="inicio.html" ; style="background-color: antiquewhite;">CARROUSELL</a>
+        
+        <p>In this example we have turned off parallax scrolling for mobile devices. It works as expected on all desktop screens sizes.</p>
+        <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+        
+        <div class="parallax"></div>
+        
+        <div style="height:1000px;background-color:rgb(255, 115, 220);font-size:36px">
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </div>
+        
+        <div class="parallax"></div>
+        
+        </body>
+        </html>
